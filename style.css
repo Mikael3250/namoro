@@ -1,0 +1,22 @@
+:root {
+    --cor-primaria: #8B80F9;
+    --cor--secundaria: #414141;
+    --cor-primaria-escurecida: #726ace;
+    --cor-branca: #fff;
+    --cor-caixa: rgba(255, 255, 255, 0.5);
+    --cor-sombra-02: rgba(0, 0, 0, 0.2);
+    --cor-sombra-03: rgba(0, 0, 0, 0.3);
+    --cor-sombra-05: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./heart.gif);
+}
+
