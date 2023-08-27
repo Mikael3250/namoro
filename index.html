@@ -11,11 +11,21 @@
     <link rel="icon" href="./icon.png">
 </head>
 
-<body>
-    <audio autoplay loop preload="auto">
-        <source src="./boa-noite-meu-consagrado.mp3" type="audio/mpeg">
-        f no chat
+<body onclick="audio.play()">
+    <div class="content">
+        <h1>quer namorar comigo?</h1>
+        <div class="caixa">
+            <button onclick="vaiDarNamoro()">
+                Sim
+            </button>
+            <button id="botao-nao">
+                Não
+            </button>
+        </div>
+    </div>
+    <audio autoplay loop id="musica" src="./boa-noite-meu-consagrado.mp3">
     </audio>
     <script src="./script.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 :root {
-    --cor-primaria: #8B80F9;
-    --cor--secundaria: #414141;
-    --cor-primaria-escurecida: #726ace;
+    --cor-primaria: crimson;
+    --cor-secundaria: #414141;
+    --cor-primaria-escurecida: rgb(197, 9, 47);
     --cor-branca: #fff;
     --cor-caixa: rgba(255, 255, 255, 0.5);
     --cor-sombra-02: rgba(0, 0, 0, 0.2);
@@ -15,8 +15,57 @@
     box-sizing: border-box;
 }
 
-body {
+ body {
     font-family: 'Poppins', sans-serif;
     background-image: url(./heart.gif);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
+.content {
+    background-color: var(--cor-caixa);
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 5px 15px var(--cor-sombra-05);
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 5px var(--cor-sombra-05);
+    font-size: 3em;
+}
+
+button {
+    background-color: var(--cor-primaria-escurecida);
+    border: none;
+    text-align: center;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 3px 16px;
+    border-radius: 28px;
+    color: #fff;
+    box-shadow: 0 5px 15px var(--cor-sombra-02);
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-primaria);
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: none;
+}
